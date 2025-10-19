@@ -22,14 +22,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define VIAL_KEYBOARD_UID {0x89, 0x36, 0x2A, 0xC7, 0xFA, 0xD8, 0x89, 0x45}
 #define VIAL_UNLOCK_COMBO_ROWS {0, 0}
-#define VIAL_UNLOCK_COMBO_COLS {0, 1}
+ // need to move away from col 0,1 since this is the mini
+#define VIAL_UNLOCK_COMBO_COLS {1, 2}
 
 #undef DYNAMIC_KEYMAP_LAYER_COUNT
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 #define TAPPING_TERM 180
 //#define USE_MATRIX_I2C
 
-//#define QUICK_TAP_TERM 0
+#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
 
 #ifdef RGBLIGHT_ENABLE
